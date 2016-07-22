@@ -1,0 +1,220 @@
+body,h1,h2,h3,h4,h5,h6,p,pre,ul,ol,li,dl,dt,dd,form,input,textarea,select,option{
+  padding: 0;
+  margin:0;
+  list-style:none;
+}
+a{
+  color: #666;
+  text-decoration: none;
+}
+img{
+  border:none;
+}
+h1, h2, h3, h4, h5, h6, input, textarea, select, button {
+  font-size: 100%;
+}
+
+/*子弹*/
+/*.animation{
+  width: 200px;
+  height: 200px;
+  background: rgba(200,100,10,1);
+}
+.zidan{
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  left: 300px;
+  top: 100px;
+}*/
+
+/*扑克*/
+body{
+  /*background-position: top center;
+  background: #101031 url(../img/1.jpg)no-repeat;*/
+
+  background:#101031;
+  background-position: top center;
+  background-image:url(../img/1.jpg);
+  background-repeat:no-repeat;
+}
+.zhuozi{
+  width: 700px;
+  height: 620px;
+  margin: 10px auto;
+  position: relative;
+  /*background: rgba(20,143,240,0.6);*/
+  display: block;
+}
+.pai{
+  position: absolute;
+  top: 0;
+  left: 300px;
+  width: 90px;
+  height: 120px;
+  /*background: rgba(23,10,0,0.8);*/
+  background-size: 100% 100%;
+  opacity: 0;
+}
+.chulie{
+  box-shadow: 0 0 0 3px red;
+}
+.zhuozi .move-left,.zhuozi .move-right{ 
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -55px;
+  cursor: pointer;
+  display: block;
+}
+.zhuozi .move-left{
+  background: url(../img/left2.png);
+  opacity: 0.7;
+  top: 515px;
+}
+.zhuozi .move-right{
+  background: url(../img/left1.png);
+  opacity: 0.7;
+  top: 560px;
+}
+.gameover{
+  font-family: Arial;
+  width: 160px;
+  height: 80px;
+  background:#153E88;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  left: 50%;
+  margin-left: -80px;
+  z-index: 999;
+  border-radius: 10px;
+  line-height: 80px;
+  text-align: center;
+  color: #D7DBF9;
+  font-weight: bold;
+  font-size: 20px;
+  display: none;
+  border:3px solid #7CB6F1;
+}
+/*开场*/
+.kaichang{
+  overflow: hidden;
+}
+.kaichang .left{
+  position: fixed;
+  width: 50%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transform:translateX(0);
+  transition:transform 2s ease;
+  background:#101031;
+  background-position: top right;
+  background-image:url(../img/11.jpg);
+  background-repeat:no-repeat;
+}
+.kaichang .right{
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  transform:translateX(0);
+  transition:transform 2s ease;
+  background:#101031;
+  background-position: top left;
+  background-image:url(../img/12.jpg);
+  background-repeat:no-repeat;
+}
+.kaichang.animation .left{
+  transform:translateX(-100%);
+}
+.kaichang.animation .right{
+  transform:translateX(100%);
+}
+.kaichang h1{
+  font-family: Arial;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 28px;
+  position: absolute;
+  top:520px;
+  left: 50%;
+  margin-left: -140px;
+  z-index: 222;
+  transform:translateY(0);
+  transition:transform 3s ease;
+  cursor: pointer;
+}
+.kaichang h1:hover{
+  color:#F2D320;
+}
+.kaichang.animation h1{
+  transform:translateY(-900px);
+}
+.zhuozi .tips{
+  width: 200px;
+  height: 185px;
+  position: fixed;
+  top: 450px;
+  left: 580px;
+  background: url(../img/tip.png);
+  background-size: 200px 185px;
+  z-index: 666;
+  display: none;
+}
+.zhuozi .tips1{
+  width: 200px;
+  height: 185px;
+  position: fixed;
+  top: 450px;
+  left: 580px;
+  background: url(../img/zuobian.png);
+  background-size: 200px 185px;
+  z-index: 666;
+  display: none;
+}
+.fapai{
+  position: fixed;
+  width: 200px;
+  height: 70px;
+  top: 220px;
+  left: 30px;
+  background: url(../img/fapai.png);
+  background-size: 200px 70px;
+  cursor: pointer;
+}
+.restart{
+  position: fixed;
+  width: 200px;
+  height: 70px;
+  top: 300px;
+  left: 30px;
+  background: url(../img/restart.png);
+  background-size: 200px 70px;
+  cursor: pointer;
+}
+.jieshao{
+  position: fixed;
+  width: 200px;
+  height: 70px;
+  top: 380px;
+  left: 30px;
+  background: url(../img/jieshao.png);
+  background-size: 200px 70px;
+  cursor: pointer;
+}
+.jieshao1{
+  position: fixed;
+  width: 250px;
+  height: 230px;
+  top: 380px;
+  left: 200px;
+  background: url(../img/jieshao1.png);
+  background-size: 250px 230px;
+  cursor: pointer;
+  display: none;
+}
