@@ -105,11 +105,7 @@
       return;
     }
       $(this).toggleClass('chulie');
-      if($(this).hasClass('chulie')){
-        $(this).animate({top:'-=20'})
-      }else{
-        $(this).animate({top:'+=20'})
-      }      
+      $(this).animate({top:'-=20'});
     
     //点击恰好是13时
     if($(this).data('shuzi')==13){
